@@ -12,11 +12,7 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    190deg,
-    rgb(134, 123, 205) 0%,
-    rgb(106, 90, 171) 100%
-  );
+  background: linear-gradient(190deg, #dad7eb, #576d7b);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -98,6 +94,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
   border: none;
+  font-size: 1.25rem;
 }
 
 .display-todos .buttons button:focus {
@@ -130,7 +127,6 @@ body {
   width: 18rem;
   border-radius: 0.5rem;
   padding: 1rem;
-
   position: relative;
 }
 
@@ -141,7 +137,9 @@ body {
   background-color: #e1ebfd;
   color: #271c6c;
   height: 70%;
+  font-size: 1.25rem;
 }
+
 .card textarea:disabled {
   background-color: transparent;
 }
