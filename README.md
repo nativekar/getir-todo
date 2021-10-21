@@ -8,11 +8,11 @@ This is a plain and simple ** To-do App ** that allows you to add tasks to a lis
 
 ## Libraries used
 
-_[React](https://reactjs.org/)
-_[Redux](https://redux.js.org/)
+*[React](https://reactjs.org/)
+*[Redux](https://redux.js.org/)
 
 ## Preview Images
 
- <img src="./assets/defaultState.jpg" alt="Generic Image">
+ <img src="./assets/defaultState.jpg" alt="Image" >
  <br/>
- <img src="./assets/withTodos.jpg" alt="Generic Image">
+ <img src="./assets/withTodos.jpg" alt="Image">
