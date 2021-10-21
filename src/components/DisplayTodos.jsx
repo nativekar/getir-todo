@@ -11,7 +11,7 @@ import TodoItem from "./TodoItem";
 const DisplayTodos = (props) => {
   const [sort, setSort] = useState("active");
   return (
-    <div className="displaytodos">
+    <div className="display-todos">
       <div className="buttons">
         <button onClick={() => setSort("active")}>Active</button>
         <button onClick={() => setSort("completed")}>Completed</button>
@@ -33,6 +33,7 @@ const DisplayTodos = (props) => {
               );
             })
           : null}
+        {/* completed todos  */}
         {props.todos.length > 0 && sort === "completed"
           ? props.todos.map((todo) => {
               return (
@@ -48,6 +49,7 @@ const DisplayTodos = (props) => {
               );
             })
           : null}
+        {/*ALL todos  */}
         {props.todos.length > 0 && sort === "all"
           ? props.todos.map((todo) => {
               return (
@@ -74,9 +76,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addTodo: (todo) => dispatch(addTodo(todo)),
+    addTodo: (obj) => dispatch(addTodo(obj)),
     removeTodo: (id) => dispatch(removeTodo(id)),
-    updateTodo: (todo) => dispatch(updateTodo(todo)),
+    updateTodo: (obj) => dispatch(updateTodo(obj)),
     completedTodo: (id) => dispatch(completedTodo(id)),
   };
 };
